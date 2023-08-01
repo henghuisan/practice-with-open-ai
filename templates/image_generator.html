@@ -1,0 +1,29 @@
+{% extends 'index.html' %} {% block content %}
+
+<form action="/image-generator" method="post">
+  <div class="mb-3">
+    <label class="form-label">Turning your idea into an image</label>
+    <textarea
+      class="form-control"
+      name="description"
+      rows="2"
+      required
+      placeholder="e.g. broccoli with sunglasses"
+    ></textarea>
+    <div class="text-end mt-3">
+      <button type="submit" class="btn btn-primary">Generate</button>
+    </div>
+  </div>
+</form>
+
+{% if result %}
+<div class="text-center">
+  <p class="fs-5 fw-bolder">Image Result</p>
+  <p>{{ prompt }}</p>
+  <img
+    src="{{ result
+       }}"
+    class="img-fluid img-thumbnail p-3"
+  />
+  <div>{% endif %} {% endblock %}</div>
+</div>
