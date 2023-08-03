@@ -1,0 +1,32 @@
+{% extends 'index.html' %} {% block content %}
+
+<div class="container-fluid vh-100">
+  <div class="card h-75">
+    <div class="card-body overflow-auto">
+      <div id="chatbox">
+        <div class="d-flex flex-row bg-light py-4">
+          <span class="material-symbols-rounded mx-3"> smart_toy </span>
+          <span> Hi! What can I help you today?</span>
+        </div>
+      </div>
+      <div id="loading">
+        <div class="d-flex flex-row bg-light py-4 d-none">
+          <span class="material-symbols-rounded mx-3"> smart_toy </span>
+          <span class="spinner-border spinner-border-sm" role="status"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          id="userInput"
+          placeholder="Type your message..."
+        />
+        <button class="btn btn-primary" type="button" id="sendBtn">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

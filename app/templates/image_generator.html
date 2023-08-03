@@ -1,6 +1,6 @@
 {% extends 'index.html' %} {% block content %}
 
-<form action="/image-generator" method="post">
+<form action="{{ url_for('image_gen.image_generator') }}" method="post">
   <div class="mb-3">
     <label class="form-label">Turning your idea into an image</label>
     <textarea
@@ -8,7 +8,7 @@
       name="description"
       rows="2"
       required
-      placeholder="e.g. broccoli with sunglasses"
+      placeholder="e.g. abstract pencil and watercolor art of a lonely robot holding a balloon"
     ></textarea>
     <div class="text-end mt-3">
       <button type="submit" class="btn btn-primary">Generate</button>
@@ -25,5 +25,5 @@
        }}"
     class="img-fluid img-thumbnail p-3"
   />
-  <div>{% endif %} {% endblock %}</div>
 </div>
+{% endif %} {% endblock %}

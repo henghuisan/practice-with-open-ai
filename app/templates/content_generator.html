@@ -1,0 +1,40 @@
+{% extends 'index.html' %} {% block content %}
+
+<style>
+
+</style>
+
+<form action="{{ url_for('content_gen.content_generator') }}" method="post">
+  <div class="mb-3">
+    <label class="form-label">Write me something about</label>
+    <textarea
+      class="form-control"
+      name="content"
+      rows="2"
+      required
+    ></textarea>
+    <div class="text-end mt-3">
+      <button type="submit" class="btn btn-primary">Generate</button>
+    </div>
+  </div>
+</form>
+
+{% if result %}
+<p class="fs-5 fw-bolder">Result: {{ prompt }}</p>
+<div class="content">{{ result | safe }}</div>
+{% endif %} {% endblock %}
+<!-- <div class="text-start">
+  <label for="contentTitleInput" class="form-label fs-5 fw-bolder"
+    >Suggested Title</label
+  >
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control bg-white"
+      readonly
+      value="{{ result if result else '' }}"
+    />
+    <button class="btn btn-outline-primary" type="button">Copy</button>
+    <button class="btn btn-outline-primary" type="button">Refresh</button>
+  </div>
+</div> -->

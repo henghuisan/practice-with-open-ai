@@ -14,15 +14,15 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item mx-3">
-          <a class="nav-link" href="{{ url_for('image_generator') }}"
+          <a class="nav-link" href="{{ url_for('image_gen.image_generator') }}"
             >Image Generator</a
           >
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Content Title Generator</a>
+          <a class="nav-link" href="{{ url_for('content_gen.content_generator') }}">Content Generator</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Persona ChatGPT</a>
+          <a class="nav-link" href="{{ url_for('ai_chatbot.ai_chatbot') }}">AI ChatBot</a>
         </li>
       </ul>
     </div>
