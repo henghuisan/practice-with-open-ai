@@ -16,8 +16,8 @@
   </div>
 </form>
 
-{% if result %}
 <div class="text-center">
+  {% if status == "success" %}
   <p class="fs-5 fw-bolder">Image Result</p>
   <p>{{ prompt }}</p>
   <img
@@ -25,5 +25,11 @@
        }}"
     class="img-fluid img-thumbnail p-3"
   />
+  {% elif status == "fail" %}
+  <div class="alert alert-danger" role="alert">
+    Something went wrong. Please reload and try again.
+  </div>
+  {% endif %}
 </div>
-{% endif %} {% endblock %}
+
+{% endblock %}

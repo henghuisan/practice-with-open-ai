@@ -15,16 +15,38 @@
           <span class="spinner-border spinner-border-sm" role="status"> </span>
         </div>
       </div>
+      <div id="response-failed">
+        <div class="d-flex flex-row bg-light py-4 text-danger d-none">
+          <span class="material-symbols-rounded mx-3"> smart_toy </span>
+          <span> Something went wrong. Please reload and try again.</span>
+        </div>
+      </div>
     </div>
     <div class="card-footer">
       <div class="input-group">
+        <button
+          class="btn btn-secondary d-flex justify-content-center"
+          type="button"
+          id="recordBtn"
+        >
+          <span class="material-symbols-rounded"> mic </span>
+        </button>
+        <button
+          class="btn btn-danger d-flex justify-content-center d-none rounded-start"
+          id="stopBtn"
+        >
+          <span class="material-symbols-rounded"> stop_circle </span>
+        </button>
         <input
           type="text"
           class="form-control"
           id="userInput"
-          placeholder="Type your message..."
+          placeholder="Speak or type your text here..."
         />
-        <button class="btn btn-primary" type="button" id="sendBtn">Send</button>
+
+        <button class="btn btn-primary" type="button" id="sendUserInputBtn">
+          Send
+        </button>
       </div>
     </div>
   </div>

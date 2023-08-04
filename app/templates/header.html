@@ -1,30 +1,39 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="{{ url_for('image_gen.image_generator') }}"
-            >Image Generator</a
-          >
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="{{ url_for('content_gen.content_generator') }}">Content Generator</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="{{ url_for('ai_chatbot.ai_chatbot') }}">AI ChatBot</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="{{ url_for('image_gen.image_generator') }}"
+          >Image Generator</a
+        >
+      </li>
+      <li class="nav-item mx-3">
+        <a
+          class="nav-link"
+          href="{{ url_for('content_gen.content_generator') }}"
+          >Content Generator</a
+        >
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="{{ url_for('speech_to_text.speech_to_text') }}"
+          >Speech To Text</a
+        >
+      </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="{{ url_for('ai_chatbot.ai_chatbot') }}"
+          >AI ChatBot</a
+        >
+      </li>
+    </ul>
+  </div>s
 </nav>
