@@ -25,7 +25,7 @@
     <div class="card-footer">
       <div class="input-group">
         <button
-          class="btn btn-secondary d-flex justify-content-center"
+          class="btn btn-primary d-flex justify-content-center"
           type="button"
           id="recordBtn"
         >
@@ -36,6 +36,12 @@
           id="stopBtn"
         >
           <span class="material-symbols-rounded"> stop_circle </span>
+        </button>
+        <button
+          class="btn btn-dark rounded-start disabled d-none"
+          id="loadingBtn"
+        >
+          <span class="spinner-border spinner-border-sm" role="status"> </span>
         </button>
         <input
           type="text"

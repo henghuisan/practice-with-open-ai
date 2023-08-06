@@ -45,7 +45,7 @@
 
 # # ======= CONTENT GENERATOR (begin) ======= #
 # @app.route("/content-generator", methods=("GET", "POST"))
-# def content_generator():
+# def essay_generator():
 #     if request.method == "POST":
 #         prompt = request.form["content"]
 #         try:
@@ -56,12 +56,12 @@
 #             essay_output = response["choices"][0]["text"]
 #             result = f"<p>{essay_output.replace('/n', '</p><p>')}</p>"
 
-#             return redirect(url_for("content_generator", result=result, prompt=prompt))
+#             return redirect(url_for("essay_generator", result=result, prompt=prompt))
 #         except InvalidRequestError as e:
 #             print(e)
 #     result = request.args.get("result")
 #     prompt = request.args.get("prompt")
-#     return render_template("content_generator.html", result=result, prompt=prompt)
+#     return render_template("essay_generator.html", result=result, prompt=prompt)
 # # ======= CONTENT GENERATOR (end) ======= #
 
 
