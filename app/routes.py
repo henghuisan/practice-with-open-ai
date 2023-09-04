@@ -31,7 +31,7 @@ speech_to_text_bp = Blueprint("speech_to_text", __name__)
 
 @main_bp.route("/", methods=("GET", "POST"))
 def index():
-    return render_template("index.html")
+    return redirect(url_for("ai_chatbot.ai_chatbot"))
 
 
 @image_gen_bp.route("/", methods=("GET", "POST"))
