@@ -1,5 +1,7 @@
 <h1 align="center" id="title">Practice with Open AI platform </h1>
 
+An implementation of AI tools including image and essay generator, speech to text, AI chatbot via API of Open AI platform
+
 ## Table of Contents
 
 [🚀 Demo](#demo) <br />
