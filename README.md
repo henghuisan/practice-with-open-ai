@@ -32,13 +32,13 @@ Before you begin, ensure that you have the following software versions installed
 Clone this repository to your local machine using:
 
 ```bash
-git clone https://github.com/henghuisan/furniture-store-recommendation-system.git
+git clone https://github.com/henghuisan/practice-with-open-ai.git
 ```
 ### 3. Create a Virtual Environment
 Navigate to the cloned directory:
 
 ``` bash
-cd furniture-store-recommendation-system
+cd practice-with-open-ai
 ```
 
 Create a virtual environment:
