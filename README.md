@@ -22,7 +22,7 @@ On the website, you can access four distinct functionalities:
 
 ## 🛠️ Installation
 ### 1. Prerequisites
-Before you begin, ensure that you have the following software versions installed:
+Before you begin, ensure you have the following requirements in place:
 
 - **Python**: Install Python from the [Python website](https://www.python.org/downloads/).
 
