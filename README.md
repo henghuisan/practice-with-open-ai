@@ -26,9 +26,11 @@ Before you begin, ensure you have the following requirements in place:
 
 - **Python**: Install Python from the [Python website](https://www.python.org/downloads/).
 
-- **Open AI**: Create account from [Open AI](https://openai.com/).
+- **Open AI**: Have an account of [Open AI](https://openai.com/).
+  - If you do not have an account of Open AI, you can a three-month gift credit of $5 which is a free trial that Open AI provides for new user.
 
-- **Cloudinary**: Create account from [Cloudinary](https://cloudinary.com/).
+- **Cloudinary**: Have an account of [Cloudinary](https://cloudinary.com/).
+  - Cloudinary will serve as the platform for storing user voice inputs.
 
 ### 2. Clone the Repository
 Clone this repository to your local machine using:
