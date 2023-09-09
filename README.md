@@ -1,4 +1,6 @@
-<h1 align="center" id="title">Practice with Open AI platform </h1>
+<h1 align="center" id="title">Practice with Open AI Platform </h1>
+
+An implementation of AI tools including image and essay generator, speech to text, AI chatbot via API of Open AI Platform
 
 ## Table of Contents
 
@@ -20,25 +22,27 @@ On the website, you can access four distinct functionalities:
 
 ## 🛠️ Installation
 ### 1. Prerequisites
-Before you begin, ensure that you have the following software versions installed:
+Before you begin, ensure you have the following requirements in place:
 
 - **Python**: Install Python from the [Python website](https://www.python.org/downloads/).
 
-- **Open AI**: Create account from [Open AI](https://openai.com/).
+- **Open AI**: Have an account of [Open AI](https://openai.com/).
+  - If you do not have an account of Open AI, you can a three-month gift credit of $5 which is a free trial that Open AI provides for new user.
 
-- **Cloudinary**: Create account from [Cloudinary](https://cloudinary.com/).
+- **Cloudinary**: Have an account of [Cloudinary](https://cloudinary.com/).
+  - Cloudinary will serve as the platform for storing user voice inputs.
 
 ### 2. Clone the Repository
 Clone this repository to your local machine using:
 
 ```bash
-git clone https://github.com/henghuisan/furniture-store-recommendation-system.git
+git clone https://github.com/henghuisan/practice-with-open-ai.git
 ```
 ### 3. Create a Virtual Environment
 Navigate to the cloned directory:
 
 ``` bash
-cd furniture-store-recommendation-system
+cd practice-with-open-ai
 ```
 
 Create a virtual environment:
