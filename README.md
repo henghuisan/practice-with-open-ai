@@ -9,8 +9,10 @@ An implementation of AI tools including image and essay generator, speech to tex
 [🛠️ Installation](#installation) <br />
 [☎️ Contact](#contact) <br />
 
+<!-- 
 ## 🚀 Demo
 [Practice with Open AI platform](https://practice-with-open-ai.vercel.app/)
+-->
 
 ## 💻 Project Overview
 On the website, you can access four distinct functionalities:
